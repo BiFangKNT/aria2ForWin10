@@ -135,16 +135,20 @@ Start-Process aria2c -ArgumentList "--conf-path=$aria2Conf" -WindowStyle Hidden
 
 **安装方式**：
 - Chrome/Edge: 在扩展商店搜索"猫抓"或"CatCatch"
+   - [Chrome 扩展商店](https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb)
+   - [Edge 扩展商店](https://microsoftedge.microsoft.com/addons/detail/%E7%8C%AB%E6%8A%93/oohmdefbjalncfplafanlagojlakmjci)
 - Firefox: 在附加组件商店搜索"猫抓"
+   - [Firefox 附加组件商店](https://addons.mozilla.org/addon/cat-catch/)
 
 **配置建议**：
 1. 安装后点击扩展图标进入设置
-2. 在"下载设置"中配置：
-   - 下载工具：选择"aria2"
-   - aria2 RPC地址：`http://localhost:6800/jsonrpc`
-   - RPC密钥：留空（如果aria2.conf中设置了rpc-secret，则填入对应密钥）
-3. 启用"自动捕获"功能
-4. 根据需要调整文件类型过滤器
+2. 在设置中配置：
+   - 后缀 -> mp4 -> 过滤大小 -> 1024
+   - Aria2 RPC -> 启用
+   - M3U8解析器 ->
+      - 启用
+      - 下载线程 -> 8~32
+      - mp4格式 -> 启用
 
 ## 配置说明
 
