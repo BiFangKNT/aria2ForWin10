@@ -117,7 +117,7 @@ Start-Process aria2c -ArgumentList "--conf-path=$aria2Conf" -WindowStyle Hidden
 - 基本设置 -> 断点续传 ：是
 - HTTP/FTP/SFTP 设置 -> 最小文件分片大小 ：1MB
 - BitTorrent 设置 -> 
-    - BT 服务器地址：从 `https://cf.trackerslist.com/best_aria2.txt` 中复制粘贴
+    - BT 服务器地址：从 [优质 trackers 列表](https://cf.trackerslist.com/best_aria2.txt) 中复制粘贴
     - 全局最大上传速度：2M
 - 高级设置 -> 
     - 始终断点续传：是
